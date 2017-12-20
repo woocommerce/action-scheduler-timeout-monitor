@@ -1,7 +1,7 @@
 <?php
 /**
  * Plugin Name: WooCommerce Subscriptions Action Scheduler Timeout Monitor
- * Plugin URI:
+ * Plugin URI: https://github.com/Prospress/wcs-action-scheduler-timeout-monitor
  * Description: Gather additional information about subscription action scheduled events which timeout.
  * Author: Prospress Inc.
  * Author URI: http://prospress.com/
