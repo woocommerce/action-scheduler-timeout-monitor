@@ -68,7 +68,7 @@ class WCS_Action_Scheduler_Timeout_Monitor {
 	 * @since 1.0
 	 */
 	public static function stop_monitoring_action() {
-		unset( self::$action_id, self::$start_time, self::$timeout_time );
+		self::$action_id = self::$start_time = self::$timeout_time = null;
 
 		remove_action( 'all', __CLASS__ . '::track_action_execution_time', 0 );
 	}
