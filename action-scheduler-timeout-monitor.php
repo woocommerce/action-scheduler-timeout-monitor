@@ -1,13 +1,13 @@
 <?php
 /**
- * Plugin Name: WooCommerce Subscriptions Action Scheduler Timeout Monitor
- * Plugin URI: https://github.com/Prospress/wcs-action-scheduler-timeout-monitor
+ * Plugin Name: Action Scheduler Timeout Monitor
+ * Plugin URI: https://github.com/Prospress/action-scheduler-timeout-monitor
  * Description: Gather additional information about subscription action scheduled events which timeout.
  * Author: Prospress Inc.
  * Author URI: http://prospress.com/
  * Version: 1.0
  *
- * Copyright 2017 Prospress, Inc.  (email : freedoms@prospress.com)
+ * Copyright 2018 Prospress, Inc.  (email : freedoms@prospress.com)
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -23,7 +23,7 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
 *
 * @version   1.0
-* @package   WooCommerce Subscriptions Action Scheduler Timeout Monitor
+* @package   Action Scheduler Timeout Monitor
 * @author    Prospress
  */
 
@@ -31,10 +31,9 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit; // Exit if accessed directly
 }
 
-class WCS_Action_Scheduler_Timeout_Monitor {
+class Action_Scheduler_Timeout_Monitor {
 
-	protected static $action_id = null;
-
+	protected static $action_id    = null;
 	protected static $start_time   = null;
 	protected static $timeout_time = null;
 
@@ -88,4 +87,4 @@ class WCS_Action_Scheduler_Timeout_Monitor {
 		return $value;
 	}
 }
-WCS_Action_Scheduler_Timeout_Monitor::init();
+Action_Scheduler_Timeout_Monitor::init();

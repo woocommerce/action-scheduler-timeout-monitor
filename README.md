@@ -1,4 +1,4 @@
-## WooCommerce Subscriptions Action Scheduler Timeout Monitor
+## Action Scheduler Timeout Monitor
 
 If a scheduled action runs for more than its allocated time (`action_scheduler_failure_period`) the `ActionScheduler_QueueCleaner` will mark the action as failed and log the nondescript error `action timed out after 300 seconds`. Because this cleaning event occurs in another PHP instance and separate process there's no stack trace which can be included as part of this error.
 
@@ -10,13 +10,6 @@ This plugin makes use of the resource intensive WP `'all'` action and therefore 
 
 1. Upload the plugin's files to the `/wp-content/plugins/` directory of your WordPress site
 1. Activate the plugin through the **Plugins** menu in WordPress
-
-### Requirements
-
-In order to use the extension, you will need:
-
-* WooCommerce Subscriptions. Recommended v2.2.17+
-* WooCommerce
 
 #### License
 
